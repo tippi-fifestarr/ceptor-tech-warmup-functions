@@ -41,4 +41,6 @@ Modify this simple pattern to do a second call, this time combining this and the
 
 If the Magic Majority of your players correctly identify the type of event halfway through your game, everyone wins.
 
-# hooty
+# Description for github repo:
+
+This is a 3-day mini project inspired by Richard Gottleber's "JavaScript for Blockchain Developers" Master Class. The project begins as a decentralized news aggregator service that uses Chainlink functions to get the latest news from hackernews api, store the story on the blockchain, and display the stories on a webpage.
