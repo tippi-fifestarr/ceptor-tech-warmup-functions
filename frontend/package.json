@@ -10,8 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.7.1",
     "@astrojs/check": "^0.5.10",
+    "astro": "^4.7.1",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.1",
+    "jsdom": "^24.0.0",
+    "node-fetch": "^3.3.2",
     "typescript": "^5.4.5"
   }
 }
