@@ -64,6 +64,7 @@ To deploy and set up your Functions, you need to:
 > Ceptor Club's World/Internet-Shaking Event 💯 Game Generator (WISE-GG)
 
 Modify this simple pattern to do a second call, this time combining this and the RNG value between 0-10 to choose a prompt to give the OpenAI api.  This prompt gets us a unique, D&D 5e ready "World-shaking event" that we can use to inspire our next campaign. Or not. But if you do, there will be rewards (see Day 3).
+![image](https://github.com/tippi-fifestarr/ceptor-tech-warmup-functions/assets/62179036/39670b2f-f3db-46ca-a2b4-2529a17085c2)
 
 1. Gamemaster inputs preferences, such as ["High Fantasy, very low-tech, noir, with a touch of steampunk"].
 2. Random number gets us a random star wars hero, "Boba Fett".  
