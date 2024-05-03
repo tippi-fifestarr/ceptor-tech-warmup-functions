@@ -38,21 +38,21 @@ To deploy and set up your Functions, you need to:
 - in `frontend/src/pages/index.astro` you can display the stories on a webpage
   ```astro
   async function fetchOGData(url) {
-  try {
-    const response = await fetch(url);
-    const html = await response.text();
-    const dom = new JSDOM(html);
-    const doc = dom.window.document;
-    let ogTitle =
-      doc.querySelector('meta[property="og:title"]')?.content || url;
-    const ogImage = doc.querySelector('meta[property="og:image"]')?.content;
-    return { ogTitle, ogImage, url };
-  } catch (error) {
-    console.error("Error fetching OG data:", error);
-    return { ogTitle: "No title", ogImage: "No image", url };
+      try {
+        const response = await fetch(url);
+        const html = await response.text();
+        const dom = new JSDOM(html);
+        const doc = dom.window.document;
+        let ogTitle =
+          doc.querySelector('meta[property="og:title"]')?.content || url;
+        const ogImage = doc.querySelector('meta[property="og:image"]')?.content;
+        return { ogTitle, ogImage, url };
+      } catch (error) {
+        console.error("Error fetching OG data:", error);
+        return { ogTitle: "No title", ogImage: "No image", url };
+      }
   }
-}
-```
+
 
 ## Day 2: RNG => evolve into something "Ceptory". 
 
