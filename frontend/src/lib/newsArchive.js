@@ -1,3 +1,4 @@
+// This is the OG code from the tutorial, the modified version is in public...
 // Import necessary modules from ethers library
 import { ethers, JsonRpcProvider } from "ethers";
 // Import the dotenv module to load environment variables

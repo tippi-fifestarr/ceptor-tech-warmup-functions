@@ -73,26 +73,26 @@ let preferences = "";
 		</nav>
 		<h1>News Articles</h1>
 	
-		<script>
+		<script type="module">
+			import { sendRequest } from '/newsArchive.js';  // Adjust path as necessary
+		
 			document.addEventListener('DOMContentLoaded', function() {
-				// Handling form submission
 				document.getElementById('preferenceForm').addEventListener('submit', function(event) {
 					event.preventDefault();
 					const preferences = document.getElementById('preferences').value;
 					console.log('Preferences: ', preferences);
-					// Add logic here if needed
 				});
-	
-				// Handling button click
+		
 				document.getElementById('fetchButton').addEventListener('click', async function() {
 					console.log('Fetching more articles...');
-					// Assuming window.ethereum is available
-					const provider = new ethers.providers.Web3Provider(window.ethereum);
-					const signer = provider.getSigner();
-					console.log('Signer:', await signer.getAddress());
-					// Additional logic to fetch articles
+					try {
+						const newArticles = await sendRequest();
+						console.log('New articles fetched:', newArticles);
+					} catch (error) {
+						console.error('Error fetching new articles:', error);
+					}
 				});
-			});
+			});			
 		</script>
 	</body>
 	</html>
